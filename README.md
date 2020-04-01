@@ -5,7 +5,16 @@ Docker and Singularity files for single cell analysis on Google Cloud Engine, AW
 
 ### Docker
 `
-docker build --file <file name> -t <container name> .
+docker build --file <file name> -t <image name> .
+`
+
+### Singularity
+
+## Running Containers
+
+### Docker
+`
+docker run --rm -p 10000:8888 -e JUPYTER_ENABLE_LAB=yes apblair/ab-JupyterLab_tensorflow_v2.0
 `
 
 ### Singularity
