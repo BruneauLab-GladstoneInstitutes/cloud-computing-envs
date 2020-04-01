@@ -166,7 +166,7 @@ RUN  mkdir -p /home/jupyter-user/.rpackages \
  && R -e 'BiocManager::install(c( "minfi", "BiocGenerics", "DelayedArray", "DelayedMatrixStats", "limma", "S4Vectors", "SingleCellExperiment", "SummarizedExperiment", "batchelor"))' \
  && R -e 'devtools::install_github("cole-trapnell-lab/leidenbase")' \
  && R -e 'devtools::install_github("cole-trapnell-lab/monocle3")' \
- && R -e 'install.packages("Seurat")' \
+#  && R -e 'install.packages("Seurat")' \
  && R -e 'IRkernel::installspec()' \
  && chown -R $USER:users /home/jupyter-user/.local
 
