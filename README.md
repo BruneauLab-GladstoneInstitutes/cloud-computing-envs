@@ -9,6 +9,9 @@ docker build --file <file name> -t <image name> .
 `
 
 ### Singularity
+ `
+ singularity build <file name>  docker://<docker container>
+ `
 
 ## Running Containers
 
